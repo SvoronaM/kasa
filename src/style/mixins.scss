@@ -1,0 +1,19 @@
+// Responsive
+
+@mixin tablettes-only {
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width : map-get($breakpoints, desktop)) {
+    @content
+  }
+};
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) and (max-width : map-get($breakpoints, largeScreen)) {
+      @content
+    }
+  };
+  
+@mixin largeScreen-only {
+  @media screen and (min-width : map-get($breakpoints, largeScreen)) {
+    @content
+  }
+};

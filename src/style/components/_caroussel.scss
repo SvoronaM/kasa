@@ -1,0 +1,66 @@
+.caroussel {
+    height: 255px;
+    position: relative;
+    width: 100%;
+    background-color: #ff60608c;
+    border-radius: 10px;
+    @include tablettes-only{
+        height: 30vh;
+    }
+    @include desktop-only{
+        height: 415px;
+    }
+    @include largeScreen-only{
+        height: 415px;
+    }
+    .caroussel-left, .caroussel-right{
+        position: absolute;
+        color: $color-2;
+        font-size: 30px;
+        @include tablettes-only{
+            font-size: 55px;
+        }
+        @include desktop-only{
+            font-size: 80px;
+        }
+        @include largeScreen-only{
+            font-size: 95px;
+        }
+    }
+    .caroussel-left{
+        left: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .caroussel-right{
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .caroussel-count{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        span{
+            color: $color-2;
+            font-weight: $font-weight-1;
+            font-size: $font-size-4;
+        }
+
+    }
+    img{
+        height: 100%;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include tablettes-only{
+        }
+        @include desktop-only{
+        }
+        @include largeScreen-only{
+        }
+    }
+}

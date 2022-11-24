@@ -9,7 +9,6 @@ const Caroussel = ({ images }) => {
     useEffect(() => {
         setPicData(images);
         setDataLength(images.length);
-        ;
     },[images]);
 
     useEffect(() =>{
@@ -43,7 +42,7 @@ const Caroussel = ({ images }) => {
 
     return (
         <div className='caroussel'>
-            <div className='caroussel-left'onClick={()=> prevPic()}><i className="fa-solid fa-chevron-left"></i></div>
+            <div className='caroussel-left' onClick={()=> prevPic()}><i className="fa-solid fa-chevron-left"></i></div>
             <div className='caroussel-right' onClick={() => nextPic()}><i className="fa-solid fa-chevron-right"></i></div>
             <img src={`${picData[picNumber-1]}`} alt=""/>
             <div className='caroussel-count'>

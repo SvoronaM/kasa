@@ -1,5 +1,5 @@
 import React from 'react';
-import logoMobileWhite from '../images/logoMobileFooter.png'
+import logoMobileWhite from '../images/logoMobileFooter.png';
 
 const Footer = () => {
     return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import LogoMobile from '../images/logoMobile.png';
-import LogoImg from '../images/logo.png'
+import LogoImg from '../images/logo.png';
 import { useNavigate } from 'react-router-dom';
 
 

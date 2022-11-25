@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import Carousel from '../components/Carousel';
+import Caroussel from '../components/Caroussel';
 import Tag from "../components/Tag";
 import Rating from '../components/Rating';
 import Dropdown from '../components/Dropdown';
@@ -15,7 +15,7 @@ const Accommodation = () => {
 
     return (
         <main className="accommodation">
-            <Carousel images={accommodation.pictures}/>
+            <Caroussel images={accommodation.pictures}/>
             <div className="accommodation-header">
                 <div className="accommodation-header_left">
                     <div className="accommodation-titles">

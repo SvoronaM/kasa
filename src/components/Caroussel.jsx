@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-const Carousel = ({ images }) => {
+const Caroussel = ({ images }) => {
 
     const [picNumber, setPicNumber] = useState(1);
     const [picData, setPicData] = useState([]);
@@ -52,4 +52,4 @@ const Carousel = ({ images }) => {
     );
 }
 
-export default Carousel;
+export default Caroussel;

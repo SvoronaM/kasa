@@ -7,7 +7,7 @@
         width: 60%;
     }
     .dropdown-head{
-        background-color: $color-1;
+        background-color: transparent;
         color: $color-2;
         display: flex;
         justify-content: space-between;
@@ -45,7 +45,7 @@
         }
         button{
             border: 0;
-            background-color: transparent;
+            background-color: $color-1;
             color: $color-2;
             cursor: pointer;
             @include tablettes-only{
@@ -112,5 +112,3 @@
     }
 
 }
-Footer
-© 2022 GitHub, Inc.

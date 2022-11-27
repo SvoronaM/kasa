@@ -11,7 +11,7 @@
       @content
     }
   };
-  
+
 @mixin largeScreen-only {
   @media screen and (min-width : map-get($breakpoints, largeScreen)) {
     @content

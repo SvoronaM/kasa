@@ -1,6 +1,11 @@
 .dropdown{
     margin-bottom: 20px;
-
+    @include desktop-only{
+        width: 80%;
+    }
+    @include largeScreen-only{
+        width: 60%;
+    }
     .dropdown-head{
         background-color: $color-1;
         color: $color-2;
@@ -9,17 +14,16 @@
         align-items: center;
         border-radius: 5px;
         height: 30px;
+
         @include tablettes-only{
             height: 40px;
         }
         @include desktop-only{
             height: 47px;
-            width: 80%;
         }
         @include largeScreen-only{
             height: 55px;
-            width: 60%;
-        } 
+        }
 
         h3{
             margin: 0;
@@ -27,7 +31,7 @@
             padding-left: 6px;
             text-transform: capitalize;
             font-weight: $font-weight-1;
-            
+
             @include tablettes-only{
                 font-size: $font-size-4;
             }
@@ -36,12 +40,12 @@
             }
             @include largeScreen-only{
                 font-size: $font-size-3;
-            } 
+            }
 
         }
         button{
             border: 0;
-            background-color: $color-1;
+            background-color: transparent;
             color: $color-2;
             cursor: pointer;
             @include tablettes-only{
@@ -106,5 +110,7 @@
         transform: scaleY(1);
         opacity: 1;
     }
-    
+
 }
+Footer
+© 2022 GitHub, Inc.

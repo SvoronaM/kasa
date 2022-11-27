@@ -173,7 +173,7 @@
         display: flex;
         justify-content: space-between;
     }
-    .accommodation-desc, .accommodation-equipements{
+    .accommodation-desc, .accommodation-equipments{
         @include desktop-only{
             width: 45%;
         }

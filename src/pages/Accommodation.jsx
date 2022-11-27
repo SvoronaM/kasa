@@ -42,7 +42,7 @@ const Accommodation = () => {
                     <div className="accommodation-desc">
                         <Dropdown props={accommodation.description} title={"description"}/>
                     </div>
-                    <div className="accommodation-equipment">
+                    <div className="accommodation-equipments">
                         <Dropdown props={accommodation.equipments} title={"équipements"}/>
                     </div>
             </div>

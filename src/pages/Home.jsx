@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import forestMobile from '../images/forestMobile.png';
 import forest from '../images/forest.png'
 import { useNavigate } from 'react-router-dom';
@@ -28,7 +27,7 @@ const Home = () => {
     return (
         <main className='home'>
             <div className='main-banner'>
-                {size < 375? <img src={forestMobile} alt="image de forêt" /> : <img src={forest} alt="image de forêt" />}
+                {size < 375? <img src={forestMobile} alt="de forêt" /> : <img src={forest} alt="de forêt" />}
                 <h1> Chez vous, partout et ailleurs</h1>
             </div>
             <section className='main-accommodations'>

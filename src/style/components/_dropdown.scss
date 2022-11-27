@@ -1,11 +1,6 @@
 .dropdown{
     margin-bottom: 20px;
-    @include desktop-only{
-        width: 80%;
-    }
-    @include largeScreen-only{
-        width: 60%;
-    }
+
     .dropdown-head{
         background-color: $color-1;
         color: $color-2;
@@ -14,15 +9,16 @@
         align-items: center;
         border-radius: 5px;
         height: 30px;
-        
         @include tablettes-only{
             height: 40px;
         }
         @include desktop-only{
             height: 47px;
+            width: 80%;
         }
         @include largeScreen-only{
             height: 55px;
+            width: 60%;
         } 
 
         h3{

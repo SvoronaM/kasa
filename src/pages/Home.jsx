@@ -32,12 +32,7 @@ const Home = () => {
             </div>
             <section className='main-accommodations'>
               {data.map((elem) => {return(
-                            <article 
-                                key={elem.id} 
-                                className='accommodation-card' 
-                                onClick={() => navigate(`logement/${elem.id}`)}
-                                style={{backgroundImage: `url(${elem.cover})`}}
-                            >
+                            <article key={elem.id} className='accommodation-card' onClick={() => navigate(`logement/${elem.id}`)} style={{backgroundImage: `url(${elem.cover})`}} >
                                 <div className='accommodation-card-filter'>
                                     <h2>{elem.title}</h2>
                                 </div>

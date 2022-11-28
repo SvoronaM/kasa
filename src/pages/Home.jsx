@@ -10,9 +10,7 @@ const Home = () => {
     const navigate = useNavigate();
     document.title = 'Kasa - Acceuil';
 
-
     const [size, setSize] = useState(window.innerWidth)
-
 
     useEffect(() => {
         const handleResize = () => {

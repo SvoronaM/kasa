@@ -7,10 +7,10 @@
         height: 30vh;
     }
     @include desktop-only{
-        height: 415px;
+        height: 350px;
     }
     @include largeScreen-only{
-        height: 415px;
+        height: 450px;
     }
     .caroussel-left, .caroussel-right{
         display: block;
@@ -39,10 +39,11 @@
         transform: translateY(-50%);
     }
     .caroussel-count{
-        position: relative;
+        position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 2;
         span{
             color: $color-2;
             font-weight: $font-weight-1;
@@ -63,10 +64,10 @@
             height: 290px;
         }
         @include desktop-only{
-            height: 400px;
+            height: 350px;
         }
         @include largeScreen-only{
-            height: 470px;
+            height: 450px;
         }
     }
 }

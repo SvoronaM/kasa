@@ -1,6 +1,8 @@
 .accommodation{
     display: flex;
     flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
     .caroussel{
         @include desktop-only{
         align-self: center;
@@ -16,17 +18,17 @@
     flex-direction: column;
     @include tablettes-only{
         flex-direction: row;
-        margin-bottom: 20px;
+        margin-bottom: 2%;
     }
     @include desktop-only{
         flex-direction: row;
-        margin-bottom: 20px;
-        margin-top: 10px;
+        margin-bottom: 2%;
+        margin-top: 2%;
     }
     @include largeScreen-only{
         flex-direction: row;
-        margin-bottom: 24px;
-        margin-top: 10px;
+        margin-bottom: 3%;
+        margin-top: 3%;
     }
     .accommodation-header_left{
         .accommodation-titles{

@@ -26,13 +26,8 @@
             font-size: 95px;
         }
     }
-    .caroussel-left{
+    .caroussel-left, .caroussel-right{
         left: 6px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .caroussel-right{
-        right: 6px;
         top: 50%;
         transform: translateY(-50%);
     }

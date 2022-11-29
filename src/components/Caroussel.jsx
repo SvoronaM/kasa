@@ -42,8 +42,8 @@ const Caroussel = ({ images }) => {
 
     return (
         <div className='caroussel'>
-            <div className='caroussel-left' onClick={()=> prevPic()}><i className="fa-solid fa-chevron-left"></i></div>
-            <div className='caroussel-right' onClick={() => nextPic()}><i className="fa-solid fa-chevron-right"></i></div>
+            {dataLength> 1 && <div className='caroussel-left' onClick={()=> prevPic()}><i className="fa-solid fa-chevron-left"></i></div>}
+            {dataLength > 1 && <div className='caroussel-right' onClick={() => nextPic()}><i className="fa-solid fa-chevron-right"></i></div>}
             <img src={`${picData[picNumber-1]}`} alt=""/>
             <div className='caroussel-count'>
                 <span>{picNumber}/{dataLength}</span>

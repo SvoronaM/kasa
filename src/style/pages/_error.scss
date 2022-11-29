@@ -15,26 +15,32 @@
         h1{
             font-size: 96px;
             @include desktop-only{
-                font-size: 288px;
+                font-size: 150px;
+            }
+            @include largeScreen-only{
+                font-size: 200px;
             }
         }
         h2{
             font-size: $font-size-4;
             text-align: center;
             @include desktop-only{
-                font-size: 36px;
+                font-size: 20px;
+            }
+            @include largeScreen-only{
+                font-size:40px;
             }
         }
     }
-    .errror-redirect{
+    .error-redirect, a{
         text-align: center;
         padding-top: 130px;
-        a{
-            color : $color-1;
-        }
+        color : $color-1;
         @include desktop-only{
-            font-size: 18px;
+            font-size: 20px;
         }
-
+        @include largeScreen-only{
+            font-size:30px;
+        }
     }
 }

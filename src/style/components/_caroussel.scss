@@ -10,7 +10,7 @@
         height: 400px;
     }
     @include largeScreen-only{
-        height: 500px;
+        height: 600px;
     }
     .caroussel-left, .caroussel-right{
         display: block;
@@ -67,7 +67,7 @@
             height: 400px;
         }
         @include largeScreen-only{
-            height: 500px;
+            height: 600px;
         }
     }
 }

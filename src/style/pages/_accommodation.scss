@@ -35,7 +35,6 @@
             h1{
                 font-size: $font-size-4;
                 font-weight: $font-weight-1;
-                line-height: 26px;
                 @include tablettes-only{
                     font-size: $font-size-3;
                 }

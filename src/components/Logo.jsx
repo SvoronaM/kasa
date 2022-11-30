@@ -4,7 +4,7 @@ import LogoImg from '../images/logo.png'
 import { useNavigate } from 'react-router-dom';
 
 
-export const Logo = () => {
+export default function Logo () {
             const navigate = useNavigate();
             const [size, setSize] = useState(window.innerWidth);
             useEffect(() => {
@@ -20,4 +20,3 @@ export const Logo = () => {
                 size < 375 ? <img src={LogoMobile} alt="logo de Kasa" onClick={() => navigate('/')}/ > : <img src={LogoImg} alt="logo de Kasa" onClick={() => navigate('/')}/>
                     );
 }
-export default Logo;

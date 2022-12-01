@@ -13,10 +13,10 @@ export const App = () => {
             <Router>
                 <Navbar/>
                     <Routes>
+                        <Route path="*" element={ <Error /> } />
                         <Route exact path="/" element={<Home/>}/>
                         <Route exact path='/logement/:id' element={<Accommodation/>}/>
                         <Route path='/a-propos' element={<About/>}/>
-                        <Route path='*' element={<Error/>}/>
                     </Routes>
                 <Footer/>
             </Router>

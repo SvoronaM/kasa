@@ -20,3 +20,5 @@ export default function Logo () {
                 size < 375 ? <img src={LogoMobile} alt="logo de Kasa" onClick={() => navigate('/')}/ > : <img src={LogoImg} alt="logo de Kasa" onClick={() => navigate('/')}/>
                     );
 }
+
+

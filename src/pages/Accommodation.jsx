@@ -6,8 +6,7 @@ import Dropdown from '../components/Dropdown';
 import Accommodations from '../accommodations.json'
 
 const Accommodation = () => {
-    
-    
+
     const { id } = useParams();
     const accommodation = Accommodations.find((object) => object.id === id);
 
@@ -33,7 +32,7 @@ const Accommodation = () => {
                         </div>
                         <div className="accommodation-owner">
                             <span>{accommodation.host.name}</span>
-                            <img src={`${accommodation.host.picture}`} alt={`Photo de ${accommodation.host.name}`} />
+                            <img src={`${accommodation.host.picture}`} alt={` de ${accommodation.host.name}`} />
                         </div>
                     </div>
                 </div>

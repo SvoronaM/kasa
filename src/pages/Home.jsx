@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import forestMobile from '../images/forestMobile.png';
 import forest from '../images/forest.png'

@@ -10,7 +10,6 @@ const Caroussel = ({ images }) => {
         setPicData(images);
         setDataLength(images.length);
     },[images]);
-
     useEffect(() =>{
         const timer = () => {setTimeout(() => {
             if (picNumber < dataLength){
@@ -18,8 +17,7 @@ const Caroussel = ({ images }) => {
             } else {
                 setPicNumber(1)
             }
-        
-        },5000);} 
+        },3000);}
         timer();
         return () =>  {clearTimeout(timer)}
     },[picNumber, dataLength])

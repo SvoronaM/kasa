@@ -4,12 +4,18 @@ import Tag from "../components/Tag";
 import Rating from '../components/Rating';
 import Dropdown from '../components/Dropdown';
 import Accommodations from '../accommodations.json'
+import Error from './Error';
 
 const Accommodation = () => {
 
     const { id } = useParams();
     const accommodation = Accommodations.find((object) => object.id === id);
-
+    const findLogement = Accommodations.find(
+        (theAccomodation) => theAccomodation.id === {id}.id
+    );
+    if (!findLogement) {
+        return <Error />;
+    }
     document.title = `Kasa - ${accommodation.title}`
 
     return (

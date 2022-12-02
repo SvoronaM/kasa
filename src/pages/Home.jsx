@@ -2,21 +2,17 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import forestMobile from '../images/forestMobile.png';
 import forest from '../images/forest.png'
-import {useNavigate, useParams} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import Accommodations from '../accommodations.json'
 
 const Home = () => {
-    const { category, id } = useParams();
+
     const data = Accommodations;
     const navigate = useNavigate();
     document.title = 'Kasa - Acceuil';
 
     const [size, setSize] = useState(window.innerWidth)
-    useEffect(() => {
-        if (!id) {
-            navigate("/Error", { replace: true });
-        }
-    }, [category, id, navigate]);
+
     useEffect(() => {
         const handleResize = () => {
             setSize(window.innerWidth)

@@ -5,7 +5,7 @@ import forest from '../images/forest.png'
 import {useNavigate} from 'react-router-dom';
 import Accommodations from '../accommodations.json'
 
-const Home = () => {
+export default function Home () {
 
     const data = Accommodations;
     const navigate = useNavigate();
@@ -42,5 +42,3 @@ const Home = () => {
         </main>
     );
 }
-
-export default Home;

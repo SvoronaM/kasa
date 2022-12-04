@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Dropdown = ({ props, title }) => {
+export default function Dropdown ({ props, title }) {
 
     const [isDown, setIsDown] = useState(false)
     
@@ -41,5 +41,3 @@ const Dropdown = ({ props, title }) => {
         </div>
     );
 }
-
-export default Dropdown;

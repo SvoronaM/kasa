@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Tag = ({tags}) => {
+export default function Tag ({tags}) {
     return (
         <div className='tags'>
             {
@@ -11,5 +11,3 @@ const Tag = ({tags}) => {
         </div>
     );
 }
-
-export default Tag;

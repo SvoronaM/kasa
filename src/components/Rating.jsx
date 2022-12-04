@@ -1,4 +1,4 @@
-const Rating = ({ rating }) => {
+export default function Rating ({ rating }) {
     
     const star = <i style={{color: '#FF6060'}} className="fa-solid fa-star"></i>
     const emptyStar = <i style={{color: '#E3E3E3'}}className="fa-solid fa-star"></i>
@@ -21,5 +21,3 @@ const Rating = ({ rating }) => {
         </>
     );
 }
-
-export default Rating;

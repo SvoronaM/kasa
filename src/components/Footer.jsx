@@ -1,7 +1,7 @@
 import React from 'react';
 import logoMobileWhite from '../images/logoMobileFooter.png';
 
-const Footer = () => {
+export default function Footer () {
     return (
         <footer>
             <img src={logoMobileWhite} alt="Logo de Kasa" />
@@ -9,5 +9,3 @@ const Footer = () => {
         </footer>
     );
 }
-
-export default Footer;

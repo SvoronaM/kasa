@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 
-const Navbar = () => {
+export default function Navbar () {
     return (
         <header>
             <Logo/>
@@ -19,5 +19,3 @@ const Navbar = () => {
         </header>
     );
 }
-
-export default Navbar;

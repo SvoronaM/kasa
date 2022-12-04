@@ -3,7 +3,7 @@ import Dropdown from '../components/Dropdown';
 import mountainsMobile from '../images/mountainsMobile.png'
 import mountainImg from '../images/mountains.png'
 
-const About = () => {
+export default function About () {
 
     const data = [
         "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.",
@@ -36,5 +36,3 @@ const About = () => {
         </main>
     );
 }
-
-export default About;

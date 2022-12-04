@@ -6,7 +6,7 @@ import Dropdown from '../components/Dropdown';
 import Accommodations from '../accommodations.json'
 import Error from './Error';
 
-const Accommodation = () => {
+export default function Accommodation () {
 
     const { id } = useParams();
     const accommodation = Accommodations.find((object) => object.id === id);
@@ -54,5 +54,3 @@ const Accommodation = () => {
         </main>
     );
 }
-
-export default Accommodation;

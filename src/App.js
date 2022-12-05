@@ -8,7 +8,7 @@ import Error from './pages/Error';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-export const App = () => {
+export default function App () {
         return (
             <Router>
                 <Navbar/>

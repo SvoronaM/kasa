@@ -17,14 +17,17 @@
             width: 100%;
             height: auto;
             min-height: 111px;
+            border-radius: 15px;
         }
         @include desktop-only{
             width: 100%;
             height: auto;
+            border-radius: 20px;
         }
         @include largeScreen-only{
             width: 100%;
             height: auto;
+            border-radius: 25px;
         }
     }
     h1{
@@ -75,7 +78,7 @@
         flex-direction: column;
         align-items: center;
         background-color: $color-3;
-        border-radius: 25px;
+        border-radius: 15px;
     }
     @include desktop-only{
         margin: 100px 0 50px 0;
@@ -84,7 +87,7 @@
         padding: 56px 50px;
         justify-content: space-evenly;
         background-color: $color-3;
-        border-radius: 25px;
+        border-radius: 20px;
     }
     @include largeScreen-only{
         margin: 100px 0 100px 0;

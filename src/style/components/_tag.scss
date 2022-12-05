@@ -4,29 +4,24 @@
     span{
         color: $color-2;
         background-color: $color-1;
-        height: 18px;
-        width: 84px;
+        height: auto;
+        width: auto;
         border-radius: 5px;
         padding: 3px 10px;
         font-size: 10px;
         margin: 10px;
+        $font-weight-1 : 500;
         @include tablettes-only{
             font-size: $font-size-6;
             border-radius: 10px;
-            Width: 115px;
-            Height: 25px;
         }
         @include desktop-only{
-            font-size: $font-size-6;
+            font-size: $font-size-5;
             border-radius: 10px;
-            Width: 115px;
-            Height: 25px;
         }
         @include largeScreen-only{
-            font-size: $font-size-6;
+            font-size: $font-size-5;
             border-radius: 10px;
-            Width: 115px;
-            Height: 25px;
         }
     }
 }

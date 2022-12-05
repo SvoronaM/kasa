@@ -18,17 +18,18 @@
                 font-size: 150px;
             }
             @include largeScreen-only{
-                font-size: 200px;
+                font-size: 288px;
+                font-weight: 700;
             }
         }
         h2{
-            font-size: $font-size-4;
+            font-size: $font-size-5;
             text-align: center;
             @include desktop-only{
                 font-size: 20px;
             }
             @include largeScreen-only{
-                font-size:40px;
+                font-size:36px;
             }
         }
     }
@@ -36,11 +37,13 @@
         text-align: center;
         padding-top: 130px;
         color : $color-1;
+        font-size: $font-size-5;
+        font-weight: $font-weight-1;
         @include desktop-only{
-            font-size: 20px;
+            font-size: 18px;
         }
         @include largeScreen-only{
-            font-size:30px;
+            font-size:18px;
         }
     }
 }

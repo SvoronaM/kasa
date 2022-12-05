@@ -4,11 +4,11 @@ header{
     margin-bottom: 2%;
     img{
         cursor: pointer;
-        width: 145px;
-        height: 47px;
+        width: 125px;
+        height: 37px;
         @include desktop-only{
-            width: auto;
-            height: auto;
+            width: 145px;
+            height: 47px;
         }
         @include largeScreen-only{
             width: auto;

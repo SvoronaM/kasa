@@ -9,10 +9,10 @@ export default function Navbar () {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to='/' style={({ isActive }) => ({ textDecoration : isActive? "underline" : 'none' })}>Accueil</NavLink>
+                        <NavLink to='/' end style={({ isActive }) => ({ textDecoration : isActive? "underline" : 'none' })}>Accueil</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/a-propos' style={({ isActive }) => ({ textDecoration : isActive? "underline" : 'none'})}>A Propos</NavLink>
+                        <NavLink to='/a-propos' end style={({ isActive }) => ({ textDecoration : isActive? "underline" : 'none'})}>A Propos</NavLink>
                     </li>
                 </ul>
             </nav>

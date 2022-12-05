@@ -32,12 +32,12 @@
     }
     h1{
         color: $color-2;
-        font-weight: $font-weight-2;
+        font-weight: $font-weight-1;
         position: absolute;
         font-size: $font-size-3;
         top: 50%;
         transform: translateY(-50%);
-        width: 65%;
+        width: 70%;
         margin: auto auto auto 5%;
 
         @include tablettes-only{

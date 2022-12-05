@@ -14,7 +14,7 @@ export default function About () {
 
     
     const [size, setSize] = useState(window.innerWidth)
-
+    document.title = 'Kasa - A Propos';
 
     useEffect(() => {
         const handleResize = () => {
